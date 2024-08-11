@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 WORKDIR /app
 
-copy./app
+copy . /app
 
 Run apt-get update && apt-get install -y pythons python3-pip
 
