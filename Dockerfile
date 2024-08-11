@@ -2,9 +2,9 @@ FROM ubuntu:latest
 
 WORKDIR /app
 
-copy . /app
+COPY . /app
 
-Run apt-get update && apt-get install -y pythons python3-pip
+RUN apt-get update && apt-get install -y pythons python3-pip
 
 ENV NAME World
 
